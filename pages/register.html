@@ -7,8 +7,40 @@
 		<link rel="stylesheet" href="../css/register.css" />
 	</head>
 	<body>
-		<nav class="menu-navigation">
-			<a href="../index.html" class="link-menu">Início</a>
-		</nav>
+		<header class="main-header">
+			<h1 class="site-title">Dev Community</h1>
+			<nav class="menu-navigation">
+				<a href="../index.html" class="link-menu">Início</a>
+			</nav>
+		</header>
+		<main class="main-content">
+			<h2 class="subtitle">Join us</h2>
+			<p class="texto-comum">
+				Fill in the information below to receive our notifications and
+				participate in our meetings.
+			</p>
+			<form class="registration-form">
+				<label for="nome" class="rotulo-campo">Your Name:</label>
+				<input
+					type="text"
+					id="nome"
+					class="campo-entrada"
+					placeholder="Enter your full name"
+				/>
+				<label for="email" class="rotulo-campo">Your Email:</label>
+				<input
+					type="email"
+					id="email"
+					class="field-input"
+					placeholder="name@example.com"
+				/>
+				<button type="submit" class="botao-enviar">
+					I want to participate
+				</button>
+			</form>
+		</main>
+		<footer class="rodape-site">
+			<p class="texto-rodape">© 2023 Comunidade Dev. All rights reserved.</p>
+		</footer>
 	</body>
 </html>

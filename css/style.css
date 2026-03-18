@@ -1,22 +1,27 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
-	text-decoration: none;
 	transition: 0.3s cubic-bezier(1, 0, 0, 1);
 }
-
 /* Basic reset */
 
 .common-text,
-site-title,
-subtitle {
+.site-title,
+.subtitle {
 	font-family: Arial, sans-serif;
+}
+.site-title {
+	color: #0056b3;
+}
+
+body {
+	background-color: #dee1e7;
 }
 
 /* Flexbox in Header */
 
 .main-header {
+	height: 80px;
 	display: flex;
 	justify-content: space-between; /* Moves the menu title away from the content */
 	align-items: center; /* Centers vertically */
@@ -56,9 +61,45 @@ subtitle {
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.main-content section {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 20px	;
+}
+
 .sidebar {
 	flex: 1; /* Occupies 1 part of the space (becomes narrower than the main space) */
 	background-color: #e9ecef;
-	padding: 20px;
+	padding: 40px;
 	border-radius: 8px;
+}
+
+.sidebar ul li {
+	padding: 4px;
+}
+
+/* Interactive effect on links */
+
+.link-menu {
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease; /* Smooth transition of 0.3 seconds */
+}
+
+.link-menu:hover {
+	background-color: #0056b3;
+	color: #ffffff;
+}
+
+.rodape-site {
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	bottom: 0px;
+	text-align: center;
+	padding: 24px;
+	margin: 0 auto;
+	background-color: #333;
+	color: #fff;
 }
